@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/introduction/introduction",
+    "pages/registration/registration",
+    "pages/reservation/reservation",
+    "pages/reserlist/reserlist",
+    "pages/expert/expert",
+    "pages/groupmall/groupmall"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "王昀集团催乳小儿推拿微服务",
+    "navigationBarTextStyle": "black"
+  }
+}

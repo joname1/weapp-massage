@@ -1,0 +1,39 @@
+<view class="section">
+  <view class="public_header">
+    <text class="public_title">{{reg_title}}</text>
+  </view>
+
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="搜索: 地名或详细地址" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+
+  <template name="reglists">
+    <view class="weui-media-box weui-media-box_appmsg">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="{{img}}" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">{{point}}</view>
+        <view class="weui-media-box__desc">地址: {{address}}</view>
+        <view class="weui-media-box__desc">电话: {{tel}}</view>
+      </view>
+    </view>
+  </template>
+
+  <view wx:for="{{regdata}}" wx:key="reg_point">
+    <template is="reglists" data="{{...item}}" />
+  </view>
+</view>

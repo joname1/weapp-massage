@@ -1,0 +1,29 @@
+.section {
+  padding-bottom: 50rpx;
+}
+
+.weui-media-box {
+  box-shadow: 0px 0px 5px #c8c8c8;
+  margin-top: 5rpx;
+}
+
+.weui-media-box__title {
+  white-space: normal !important;
+}
+
+.weui-media-box__hd {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.weui-media-box__title {
+  font-size: 35rpx;
+}
+
+.weui-search-bar {
+  margin-top: -15rpx;
+}
+
+.weui-media-box__desc {
+  font-size: 30rpx;
+}

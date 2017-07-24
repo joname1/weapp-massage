@@ -1,0 +1,77 @@
+<view class="section">
+  <view class="public_header">
+    <text class="public_title">{{store_title}}</text>
+  </view>
+
+  <view class="cuiru_header">
+    <text class="cuiru_title">{{cuiru}}</text>
+  </view>
+
+  <view class="price1">
+    <view class="price1_title">一、市场统一价</view>
+    <view class="smfw">
+      <view class="smfw_title">上门服务:</view>
+      <view class="once">{{p1_smfw_once}}</view>
+      <view class="thrice">{{p1_smfw_thrice}}</view>
+    </view>
+    <view class="ddfw">
+      <view class="ddfw_title">到店服务:</view>
+      <view class="once">{{p1_ddfw_once}}</view>
+      <view class="thrice">{{p1_ddfw_thrice}}</view>
+    </view>
+  </view>
+
+  <view class="price2">
+    <view class="price2_title">二、网络市场统一价</view>
+    <view class="ddfw">
+      <view class="ddfw_title">到店服务:</view>
+      <view class="ddfw_decs">通过有效信息, 88元/次(每人限一次到店)</view>
+      <view class="once">{{p2_ddfw_once}}</view>
+      <view class="thrice">{{p2_ddfw_thrice}}</view>
+    </view>
+
+    <view class="smfw">
+      <view class="smfw_title">上门服务:</view>
+      <view class="ddfw_decs">198元/次(每人限一次到上门服务)</view>
+      <view class="once">{{p2_smfw_once}}</view>
+      <view class="thrice">{{p2_smfw_thrice}}</view>
+    </view>
+  </view>
+
+  <view class="xiaoer_header">
+    <text class="xiaoer_title">{{xiaoer}}</text>
+  </view>
+  <view class="ddfw">
+    <view class="ddfw_title">到店服务:</view>
+    <view class="once">{{p3_ddfw_once}}</view>
+  </view>
+
+  <view class="chanhou_header">
+    <text class="chanhou_title">{{chanhou}}</text>
+  </view>
+  <view class="price1_title">一、市场统一价</view>
+  <view class="page" style="padding: 25rpx;">
+    <view class="page__bd page__bd_spacing" style="border: 6rpx solid white;">
+      <template name="pricelist">
+          <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">{{title}}</view></view>
+            <view><view class="placeholder">{{price}}</view></view>
+            <view><view class="placeholder">{{time}}</view></view>
+        </view>
+      </template>
+      <block wx:for="{{pricedata}}">
+        <template is="pricelist" data="{{...item}}"></template>
+      </block>
+    </view>
+  </view>
+
+  <view class="caution">
+    <view class="caution_title">三、注意</view>
+    <view class="caution_decs">
+      <view class="caution_ab1">{{caution1}}</view>
+      <view class="caution_ab2">详情请点击以下电话咨询: </view>
+      <view class="caution_tel" bindtap="calltel">4000-600-183</view>
+      <view class="caution_mobile" bindtap="callmobile">133-9364-6247 (王经理)</view>
+    </view>
+  </view>
+</view>

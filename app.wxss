@@ -1,0 +1,15 @@
+@import 'style/weui.wxss';
+
+.public_title {
+  color: white;
+  font-weight: bold;
+  font-size: 45rpx;
+}
+
+.public_header {
+  text-align: center;
+  background: url(https://wangyunmeirong.realday.cn/Uploads/assets/header_bg.png);
+  background-size: contain;
+  height: 75rpx;
+  margin-bottom: 17rpx;
+}

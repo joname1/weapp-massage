@@ -1,0 +1,57 @@
+<view class="section">
+  <view class="public_header">
+    <text class="public_title">{{info_title}}</text>
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+      <swiper-item>
+        <image class="slide-image" src="{{item}}" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="main">
+    <view class="main_title">
+      <view class="main_title1">门店名称：</view>
+      <view class="main_title2">{{rdetaildata.rpoint}}</view>
+    </view>
+
+    <view class="main_decs">
+      <view class="main_decs1">门店介绍：</view>
+      <view class="main_decs2">{{rdetaildata.rdecs}}</view>
+    </view>
+
+    <view class="main_add">
+      <view class="main_add1">门店地址：</view>
+      <view>{{rdetaildata.raddress}}</view>
+    </view>
+
+    <view class="main_tel">
+      <view class="main_tel1">联系方式：</view>
+      <view>{{rdetaildata.rtel}}</view>
+      <view class="main_tel3" bindtap="callus">
+        <image class="main_tel_img" src="../assets/tel.png"></image>
+      </view>
+    </view>
+
+    <view class="main_prof">
+      <view class="main_prof1">门店专家</view>
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{rdetaildata.rpimg}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{rdetaildata.rpname}}</view>
+          <view class="weui-media-box__desc">{{rdetaildata.rpfile}}</view>
+          <view class="weui-media-box__info">
+            <view class="weui-media-box__info__meta" style="color: #888;">评分</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra page-main-rate">{{rdetaildata.rrate}}</view>
+          </view>
+        </view>
+      </view>
+      <navigator url="/pages/expert/expert?id={{ids}}" hover-class="navigator-hover" style="text-align: center;color:#888;">查看更多专家..</navigator>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,67 @@
+.section {
+  background-image: url(https://wangyunmeirong.realday.cn/Uploads/assets/mall_bg.png);
+  background-size: contain;
+  background-color: #fbeded;
+}
+
+.price1_title {
+  margin: 30rpx;
+  background: #dc517b;
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+.price2_title {
+  margin: 30rpx;
+  background: #dc517b;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+
+.caution {
+  padding-bottom: 30rpx;
+}
+
+.caution_title {
+  margin: 30rpx;
+  background: #dc517b;
+  width: 25%;
+  text-align: center;
+  color: white;
+}
+
+.smfw, .ddfw, .caution_decs {
+  margin-left: 50rpx;
+  line-height: 60rpx;
+  margin-top: 40rpx;
+}
+
+.smfw_title, .ddfw_title {
+  color: #ee92ab;
+}
+
+.cuiru_header, .xiaoer_header, .chanhou_header {
+  text-align: center;
+  background: url(https://wangyunmeirong.realday.cn/Uploads/assets/mall_title_bg.png);
+  background-size: cover;
+  margin: 30rpx;
+  padding: 20rpx;
+}
+
+.cuiru_title, .xiaoer_title, .chanhou_title {
+  color: #cf1d3c;
+  font-weight: bold;
+  font-size: 45rpx;
+}
+
+.placeholder {
+  margin: 10rpx;
+  padding: 0 20rpx;
+  text-align: center;
+  height: 2.3em;
+  line-height: 2.3em;
+  color: black;
+  font-size: 30rpx;
+}

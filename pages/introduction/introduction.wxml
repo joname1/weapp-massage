@@ -1,0 +1,44 @@
+<view class="section">
+  <view class="public_header">
+    <text class="public_title">{{gr_title}}</text>
+  </view>
+
+  <view class="bc">
+    <view class="bc_title">{{company_title}}</view>
+    <view class="bc_en">{{company_title_en}}</view>
+    <view class="bc_img">
+      <image src="https://wangyunmeirong.realday.cn/Uploads/assets/home1.png" />
+    </view>
+    <view class="bc_decs">{{company_decs}}</view>
+  </view>
+
+  <view class="od">
+    <view class="bc_title">{{owned_title}}</view>
+    <view class="bc_en">{{owned_title_en}}</view>
+    <view class="od_lists">
+      <view wx:for="{{owned_lists}}" wx:key="title">{{item.title}}</view>
+    </view>
+    <view>
+      <image class="od_img" src="../assets/face.png" />
+    </view>
+  </view>
+
+  <view class="service">
+    <view class="bc_title">{{ser_title}}</view>
+    <view class="bc_en">{{ser_title_en}}</view>
+    <view class="bc_decs">{{ser_decs}}</view>
+  </view>
+
+  <view class="progressive">
+    <view class="bc_title">{{prg_title}}</view>
+    <view class="bc_en">{{prg_title_en}}</view>
+    <view class="bc_decs">{{prg_decs}}</view>
+  </view>
+
+  <view class="benefit">
+    <view class="bc_title">{{ben_title}}</view>
+    <view class="bc_en">{{ben_title_en}}</view>
+    <view class="bc_decs">{{ben_decs}}</view>
+  </view>
+
+</view>

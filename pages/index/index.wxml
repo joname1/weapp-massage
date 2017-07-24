@@ -1,0 +1,52 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+  <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="section">
+  <view class="containeres">
+    <navigator url="../introduction/introduction" hover-class="navigator-hover">
+      <view class="grab">
+        <image class="home_icon" src="../assets/grab.png" />
+        <view class="home_title_cn">{{grab_title_cn}}</view>
+        <view class="home_title_en">{{grab_title_en}}</view>
+      </view>
+    </navigator>
+
+    <navigator url="../registration/registration" hover-class="navigator-hover">
+      <view class="grbm">
+        <image class="home_icon" src="../assets/grbm.png" />
+        <view class="home_title_cn">{{grbm_title_cn}}</view>
+        <view class="home_title_en">{{grbm_title_en}}</view>
+      </view>
+    </navigator>
+
+    <navigator url="../groupmall/groupmall" hover-class="navigator-hover">
+      <view class="grsc">
+        <image class="home_icon" src="../assets/grsc.png" />
+        <view class="home_title_cn">{{grsc_title_cn}}</view>
+        <view class="home_title_en">{{grsc_title_en}}</view>
+      </view>
+    </navigator>
+
+    <navigator url="../reserlist/reserlist" hover-class="navigator-hover">
+      <view class="gryy">
+        <image class="home_icon" src="../assets/gryy.png" />
+        <view class="home_title_cn">{{gryy_title_cn}}</view>
+        <view class="home_title_en">{{gryy_title_en}}</view>
+      </view>
+    </navigator>
+  </view>
+
+  <view class="footer">
+    <image class="footer_icon" src="../assets/gricon.png" />
+    <view class="footer_contact">
+      <view bindtap="hotline">全国服务热线: {{footer_tel}}</view>
+      <view>地址: {{footer_add}}</view>
+    </view>
+  </view>
+
+</view>
